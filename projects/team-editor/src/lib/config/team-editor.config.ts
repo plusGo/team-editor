@@ -1,0 +1,13 @@
+export const QUIRKS = document.compatMode !== 'CSS1Compat';
+export const ua = navigator.userAgent.toLowerCase();
+export const IE = ua.indexOf('msie') > -1 && ua.indexOf('opera') === -1;
+export const NEWIE = ua.indexOf('msie') === -1 && ua.indexOf('trident') > -1;
+export const GECKO = ua.indexOf('gecko') > -1 && ua.indexOf('khtml') === -1;
+export const WEBKIT = ua.indexOf('applewebkit') > -1;
+export const OPERA = ua.indexOf('opera') > -1;
+export const MOBILE = ua.indexOf('mobile') > -1;
+export const IOS = /ipad|iphone|ipod/.test(ua);
+export const IERANGE = !window.getSelection;
+export const matches = /(?:msie|firefox|webkit|opera)[\/:\s](\d+)/.exec(ua);
+export const V = matches ? matches[1] : '0';
+export const TIME = new Date().getTime();

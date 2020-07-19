@@ -1,0 +1,21 @@
+.team-editor {
+  position: relative;
+  width: 100%;
+  border: 1px solid #AEAEAE;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .team-editor-toolbar {
+    width: 100%;
+    outline: 8px;
+  }
+
+  .team-editor-core {
+    height: 100%;
+    outline: none;
+    margin: 8px;
+  }
+
+}
+
